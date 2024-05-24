@@ -1,0 +1,62 @@
+﻿<Window x:Class="practRab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practRab"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="350"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="90 40">
+            <Button x:Name="Exercise1"
+                    Click="Ex1_ButtonClick"
+                Content="Задание 1"
+                    Width="200" HorizontalAlignment="Left" Margin="20"/>
+            <Button x:Name="Exercise2"
+                    Click="Ex2_ButtonClick"
+                    Content="Задание 2"
+                    Width="200"
+                    HorizontalAlignment="Left"
+                    Margin="20" />
+            <Button x:Name="Exercise3"
+                    Click="Ex3_ButtonClick"
+                    Content="Задание 3"
+                    Width="200"
+                    HorizontalAlignment="Left"
+                    Margin="20" />
+            <Button x:Name="Exercise4"
+                    Click="Ex4_ButtonClick"
+                    Content="Задание 4"
+                    Width="200"
+                    HorizontalAlignment="Left"
+                    Margin="20" />
+            <Button x:Name="Exercise5"
+                    Click="Ex5_ButtonClick"
+                    Content="Задание 5"
+                    Width="200"
+                    HorizontalAlignment="Left"
+                    Margin="20" />
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <TextBlock Text="Вариант 1"
+                       VerticalAlignment="Center" HorizontalAlignment="Center" Margin="50"/>
+            <Button x:Name="Exercise11"
+                    Click="Ex11_ButtonClick"
+                    Content="Задание 1"
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Margin="20" />
+            <Button x:Name="Exercise12"
+                    Click="Ex12_ButtonClick"
+                    Content="Задание 2"
+                    Width="200"
+                    HorizontalAlignment="Center"
+                    Margin="20" />
+        </StackPanel>
+    </Grid>
+</Window>

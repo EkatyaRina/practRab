@@ -1,0 +1,41 @@
+﻿<Window x:Class="practRab.Ex11"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practRab"
+        mc:Ignorable="d"
+        Title="Ex11" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Первое задание"
+                       FontSize="30"
+                       HorizontalAlignment="Center" />
+            <TextBlock Text="Введите строку:" />
+            <TextBox x:Name="Data" />
+            <TextBlock Text="Программа находит самое короткое и самое длинное слова"
+                       Margin="20 9" />
+
+            <TextBlock 
+                       Text="Самое короткое слово:"
+                       FontSize="20" />
+            <TextBlock x:Name="ResultShort"/>
+            <TextBlock 
+                       Text="Самое длинное слово:"
+                       FontSize="20" />
+            <TextBlock x:Name="ResultLong" />
+            <Button x:Name="btnResult"
+                    Click="result_ButtonClick"
+                    Content="Запуск"
+                    Width="200"
+                    Margin="30" />
+            <Button x:Name="Exit"
+                    Click="exit_ButtonClick"
+                    Content="главное окно"
+                    Margin="70"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right" />
+        </StackPanel>
+    </Grid>
+</Window>
